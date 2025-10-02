@@ -16,7 +16,7 @@ Sample emails I have received that have been really helpful are below:
 
 - Bucky Irving is injured and this helped me quickly pickup a new RB from Free Agency. I was notified immediately about the injury which is really convenient.
 
-# Simple Instructions
+## Simple Instructions
 
 1) Clone the repo
 2) Update the config.yaml file with your league info and your gmail info for email sendouts
