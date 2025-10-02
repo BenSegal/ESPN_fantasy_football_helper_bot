@@ -1,0 +1,16 @@
+# Config file for your data
+
+# For info on how to find league info see https://github.com/cwendt94/espn-api/discussions/150
+league_info:
+    league_id: 123456 
+    espn_s2: 'YOUR_LENGTHY_espn_s2_ID'
+    swid: '{12345678-ABCD-AAAA-AAAA-AABBCCDDEEFF}'
+    
+# For info on your email info. This uses gmails free SMTP server (2K emails per day free).
+# You will need to setup an app password to use ** THIS IS NOT YOUR GMAIL PASSWORD **
+# To get an app pass look here: https://support.google.com/mail/answer/185833?sjid=9048642376420732019-NC
+email_info: 
+    sender_email: 'your__sending_email@gmail.com'
+    sender_password: 'your_16_char_app_password'
+    recipient_email: 'your_receiving_email@uw.edu'
+    
