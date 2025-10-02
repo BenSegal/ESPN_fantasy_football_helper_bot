@@ -6,9 +6,9 @@ As someone who does not like ads I stopped using the ESPN Fantasy Football app b
 As such - using the help of the ESPN API (https://pypi.org/project/espn-api/) I made a bot to do this for me. 
 
 I run this hourly via the crontab with:
-'''
+``
 57 * * * * /usr/bin/python3 path/to/file/espn_monitor_team.py
-'''
+``
 
 Sample emails I have received that have been really helpful are below:
 
