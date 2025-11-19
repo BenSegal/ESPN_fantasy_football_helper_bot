@@ -30,19 +30,20 @@ for player in my_players:
 lowest = {}
 lowest_name = {}
 lowest_position = {}
-for player in starters:
-    if 'points' in player.stats[cur_week]:
+for player in starters:        
+    if cur_week in player.stats and 'points' in player.stats[cur_week]:
         continue
     slot = player.lineupSlot
+    proj_points = player.stats[cur_week]['projected_points'] if cur_week in player.stats else 0
     if slot == 'D/ST':
         slot = 'DST'
     if slot not in lowest:
-        lowest[slot] = player.stats[cur_week]['projected_points']
+        lowest[slot] = proj_points
         lowest_name[slot] = player.name
         lowest_position[slot] = player.position
     else:
         if player.stats[cur_week]['projected_points'] < lowest[slot]:
-            lowest[slot] = player.stats[cur_week]['projected_points']
+            lowest[slot] = proj_points
             lowest_name[slot] = player.name    
             lowest_position[slot] = player.position        
 
