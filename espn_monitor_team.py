@@ -4,6 +4,11 @@ import smtplib
 import csv
 import sys
 import yaml
+import os
+
+# Adjust to the local path for when running in crontab
+cur_dir = os.path.dirname(os.path.abspath(__file__))
+os.chdir(cur_dir)
 
 with open("config.yaml", "r") as f:
     config = yaml.safe_load(f)
